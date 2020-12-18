@@ -18,3 +18,19 @@ $secondary-color: #ff652f;
     @return #fff;
   }
 }
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content; //this means that, when we pass this mixin, the content will be passed through it
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content; //this means that, when we pass this mixin, the content will be passed through it
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content; //this means that, when we pass this mixin, the content will be passed through it
+  }
+}
